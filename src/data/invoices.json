@@ -1,0 +1,283 @@
+[
+  {
+    "id": "inv-prosthesis-001",
+    "type": "prosthesis",
+    "invoiceNumber": "НП-2024-001",
+    "invoiceDate": "2024-02-15",
+    "orderNumber": "З-2024-001",
+    "personalFileId": "pf-001",
+    "clientName": "Иванов Иван Иванович",
+    "productName": "Протез бедра модульный",
+    "quantity": 1,
+    "unitPrice": 150000,
+    "totalAmount": 150000,
+    "status": "approved",
+    "priority": "normal",
+    "prosthesisType": "Модульный протез бедра",
+    "components": [
+      {
+        "id": "comp-001",
+        "name": "Шины",
+        "code": "ПБ-001",
+        "size": "L",
+        "leftQuantity": 1,
+        "rightQuantity": 0,
+        "unitPrice": 50000,
+        "totalPrice": 50000
+      },
+      {
+        "id": "comp-002",
+        "name": "Стопа",
+        "code": "ПБ-002",
+        "size": "42",
+        "leftQuantity": 1,
+        "rightQuantity": 0,
+        "unitPrice": 30000,
+        "totalPrice": 30000
+      }
+    ],
+    "measurements": {
+      "height": 175,
+      "weight": 70,
+      "activityLevel": "Средний",
+      "stumpLength": 25,
+      "stumpShape": "Цилиндрическая",
+      "mobility": "Нормальная",
+      "scarType": "Линейный",
+      "skinCondition": "Нормальный",
+      "boneSaw": "Безболезненный",
+      "support": true,
+      "objectiveData": "Культя в хорошем состоянии"
+    },
+    "needsCast": true,
+    "manufacturingDate": "2024-02-20",
+    "qualityCheck": true,
+    "notes": "Срочный заказ",
+    "createdBy": "Цех шорный",
+    "approvedBy": "Зав. цехом",
+    "sentDate": "2024-02-25",
+    "createdAt": "2024-02-15T10:00:00Z",
+    "updatedAt": "2024-02-25T14:30:00Z"
+  },
+  {
+    "id": "inv-footwear-001",
+    "type": "footwear",
+    "invoiceNumber": "НО-2024-001",
+    "invoiceDate": "2024-02-18",
+    "orderNumber": "З-2024-002",
+    "personalFileId": "pf-002",
+    "clientName": "Петрова Анна Сергеевна",
+    "productName": "Ортопедическая обувь",
+    "quantity": 1,
+    "unitPrice": 45000,
+    "totalAmount": 45000,
+    "status": "sent",
+    "priority": "normal",
+    "model": "Ортопедические туфли",
+    "color": "Черный",
+    "material": "Натуральная кожа",
+    "heelHeight": 3,
+    "heelMaterial": "Резина",
+    "size": "38",
+    "technicalOperations": [
+      {
+        "id": "op-001",
+        "operationName": "Колодка или слепок",
+        "executorName": "Мастер А.А.",
+        "executionDate": "2024-02-19",
+        "qualityCheck": true
+      },
+      {
+        "id": "op-002",
+        "operationName": "Крой модели",
+        "executorName": "Мастер Б.Б.",
+        "executionDate": "2024-02-20",
+        "qualityCheck": true
+      }
+    ],
+    "fittings": [
+      {
+        "id": "fit-001",
+        "fittingNumber": 1,
+        "callDate": "2024-02-22",
+        "appointmentDate": "2024-02-23"
+      }
+    ],
+    "needsCast": true,
+    "leftLegShortening": 2,
+    "rightLegShortening": 0,
+    "notes": "Стандартный заказ",
+    "createdBy": "Цех обувной",
+    "approvedBy": "Зав. цехом",
+    "sentDate": "2024-02-25",
+    "createdAt": "2024-02-18T09:00:00Z",
+    "updatedAt": "2024-02-25T16:00:00Z"
+  },
+  {
+    "id": "inv-ottobock-001",
+    "type": "ottobock",
+    "invoiceNumber": "НОБ-2024-001",
+    "invoiceDate": "2024-02-20",
+    "orderNumber": "З-2024-003",
+    "personalFileId": "pf-003",
+    "clientName": "Сидоров Петр Николаевич",
+    "productName": "Оттобок протез кисти",
+    "quantity": 1,
+    "unitPrice": 200000,
+    "totalAmount": 200000,
+    "status": "received",
+    "priority": "high",
+    "productType": "Протез кисти",
+    "materials": [
+      {
+        "id": "mat-001",
+        "articleNumber": "OTT-001",
+        "name": "Основа протеза",
+        "unit": "шт",
+        "quantity": 1,
+        "price": 120000,
+        "totalPrice": 120000,
+        "notes": "Основной компонент"
+      },
+      {
+        "id": "mat-002",
+        "articleNumber": "OTT-002",
+        "name": "Механизм захвата",
+        "unit": "шт",
+        "quantity": 1,
+        "price": 80000,
+        "totalPrice": 80000,
+        "notes": "Механическая часть"
+      }
+    ],
+    "fittings": [
+      {
+        "id": "fit-001",
+        "fittingNumber": 1,
+        "callDate": "2024-02-22",
+        "appointmentDate": "2024-02-23"
+      }
+    ],
+    "needsCast": true,
+    "manufacturingDate": "2024-02-25",
+    "qualityCheck": true,
+    "notes": "Сложный заказ",
+    "createdBy": "Цех оттобок",
+    "approvedBy": "Зав. цехом",
+    "sentDate": "2024-02-28",
+    "receivedDate": "2024-03-01",
+    "createdAt": "2024-02-20T11:00:00Z",
+    "updatedAt": "2024-03-01T10:00:00Z"
+  },
+  {
+    "id": "inv-repair-001",
+    "type": "repair",
+    "invoiceNumber": "НР-2024-001",
+    "invoiceDate": "2024-02-22",
+    "orderNumber": "Н-2024-001",
+    "personalFileId": "pf-004",
+    "clientName": "Козлова Мария Александровна",
+    "productName": "Ремонт протеза голени",
+    "quantity": 1,
+    "unitPrice": 25000,
+    "totalAmount": 25000,
+    "status": "completed",
+    "priority": "normal",
+    "repairType": "Ремонт протеза голени",
+    "materials": [
+      {
+        "id": "mat-001",
+        "articleNumber": "REP-001",
+        "name": "Крепежные элементы",
+        "unit": "компл",
+        "quantity": 1,
+        "price": 15000,
+        "totalPrice": 15000,
+        "notes": "Болты, гайки, шайбы"
+      },
+      {
+        "id": "mat-002",
+        "articleNumber": "REP-002",
+        "name": "Кожаные вставки",
+        "unit": "м",
+        "quantity": 0.5,
+        "price": 20000,
+        "totalPrice": 10000,
+        "notes": "Натуральная кожа"
+      }
+    ],
+    "fittings": [
+      {
+        "id": "fit-001",
+        "fittingNumber": 1,
+        "callDate": "2024-02-24",
+        "appointmentDate": "2024-02-25"
+      }
+    ],
+    "needsCast": false,
+    "repairDate": "2024-02-25",
+    "qualityCheck": true,
+    "notes": "Плановый ремонт",
+    "createdBy": "Цех шорный",
+    "approvedBy": "Зав. цехом",
+    "sentDate": "2024-02-26",
+    "receivedDate": "2024-02-27",
+    "createdAt": "2024-02-22T14:00:00Z",
+    "updatedAt": "2024-02-27T12:00:00Z"
+  },
+  {
+    "id": "inv-ready-poi-001",
+    "type": "ready-poi",
+    "invoiceNumber": "НПОИ-2024-001",
+    "invoiceDate": "2024-02-25",
+    "orderNumber": "З-2024-004",
+    "personalFileId": "pf-005",
+    "clientName": "Морозов Владимир Петрович",
+    "productName": "Слуховой аппарат",
+    "quantity": 1,
+    "unitPrice": 80000,
+    "totalAmount": 80000,
+    "status": "approved",
+    "priority": "normal",
+    "productCategory": "Слуховые аппараты",
+    "materials": [
+      {
+        "id": "mat-001",
+        "articleNumber": "POI-001",
+        "name": "Слуховой аппарат цифровой",
+        "unit": "шт",
+        "quantity": 1,
+        "price": 70000,
+        "totalPrice": 70000,
+        "notes": "Цифровая модель"
+      },
+      {
+        "id": "mat-002",
+        "articleNumber": "POI-002",
+        "name": "Батарейки",
+        "unit": "компл",
+        "quantity": 2,
+        "price": 5000,
+        "totalPrice": 10000,
+        "notes": "Комплект батареек"
+      }
+    ],
+    "fittings": [
+      {
+        "id": "fit-001",
+        "fittingNumber": 1,
+        "callDate": "2024-02-27",
+        "appointmentDate": "2024-02-28"
+      }
+    ],
+    "needsCast": false,
+    "manufacturingDate": "2024-02-26",
+    "qualityCheck": true,
+    "notes": "Готовое изделие",
+    "createdBy": "Склад готовой продукции",
+    "approvedBy": "Зав. складом",
+    "sentDate": "2024-02-28",
+    "createdAt": "2024-02-25T16:00:00Z",
+    "updatedAt": "2024-02-28T11:00:00Z"
+  }
+]
