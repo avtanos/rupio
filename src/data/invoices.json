@@ -6,11 +6,11 @@
     "invoiceDate": "2024-02-15",
     "orderNumber": "З-2024-001",
     "personalFileId": "pf-001",
-    "clientName": "Иванов Иван Иванович",
+    "clientName": "Абдыкадыров Айбек Асылбекович",
     "productName": "Протез бедра модульный",
     "quantity": 1,
-    "unitPrice": 150000,
-    "totalAmount": 150000,
+    "unitPrice": 15000,
+    "totalAmount": 15000,
     "status": "approved",
     "priority": "normal",
     "prosthesisType": "Модульный протез бедра",
@@ -22,8 +22,8 @@
         "size": "L",
         "leftQuantity": 1,
         "rightQuantity": 0,
-        "unitPrice": 50000,
-        "totalPrice": 50000
+        "unitPrice": 5000,
+        "totalPrice": 5000
       },
       {
         "id": "comp-002",
@@ -32,8 +32,8 @@
         "size": "42",
         "leftQuantity": 1,
         "rightQuantity": 0,
-        "unitPrice": 30000,
-        "totalPrice": 30000
+        "unitPrice": 3000,
+        "totalPrice": 3000
       }
     ],
     "measurements": {
@@ -66,11 +66,11 @@
     "invoiceDate": "2024-02-18",
     "orderNumber": "З-2024-002",
     "personalFileId": "pf-002",
-    "clientName": "Петрова Анна Сергеевна",
+    "clientName": "Абдыкадырова Айна Асылбековна",
     "productName": "Ортопедическая обувь",
     "quantity": 1,
-    "unitPrice": 45000,
-    "totalAmount": 45000,
+    "unitPrice": 4500,
+    "totalAmount": 4500,
     "status": "sent",
     "priority": "normal",
     "model": "Ортопедические туфли",
@@ -120,11 +120,11 @@
     "invoiceDate": "2024-02-20",
     "orderNumber": "З-2024-003",
     "personalFileId": "pf-003",
-    "clientName": "Сидоров Петр Николаевич",
+    "clientName": "Абдыкадыров Петр Александрович",
     "productName": "Оттобок протез кисти",
     "quantity": 1,
-    "unitPrice": 200000,
-    "totalAmount": 200000,
+    "unitPrice": 20000,
+    "totalAmount": 20000,
     "status": "received",
     "priority": "high",
     "productType": "Протез кисти",
@@ -135,8 +135,8 @@
         "name": "Основа протеза",
         "unit": "шт",
         "quantity": 1,
-        "price": 120000,
-        "totalPrice": 120000,
+        "price": 12000,
+        "totalPrice": 12000,
         "notes": "Основной компонент"
       },
       {
@@ -145,8 +145,8 @@
         "name": "Механизм захвата",
         "unit": "шт",
         "quantity": 1,
-        "price": 80000,
-        "totalPrice": 80000,
+        "price": 8000,
+        "totalPrice": 8000,
         "notes": "Механическая часть"
       }
     ],
@@ -176,11 +176,11 @@
     "invoiceDate": "2024-02-22",
     "orderNumber": "Н-2024-001",
     "personalFileId": "pf-004",
-    "clientName": "Козлова Мария Александровна",
+    "clientName": "Абдыкадырова Елена Владимировна",
     "productName": "Ремонт протеза голени",
     "quantity": 1,
-    "unitPrice": 25000,
-    "totalAmount": 25000,
+    "unitPrice": 2500,
+    "totalAmount": 2500,
     "status": "completed",
     "priority": "normal",
     "repairType": "Ремонт протеза голени",
@@ -191,8 +191,8 @@
         "name": "Крепежные элементы",
         "unit": "компл",
         "quantity": 1,
-        "price": 15000,
-        "totalPrice": 15000,
+        "price": 1500,
+        "totalPrice": 1500,
         "notes": "Болты, гайки, шайбы"
       },
       {
@@ -201,8 +201,8 @@
         "name": "Кожаные вставки",
         "unit": "м",
         "quantity": 0.5,
-        "price": 20000,
-        "totalPrice": 10000,
+        "price": 2000,
+        "totalPrice": 1000,
         "notes": "Натуральная кожа"
       }
     ],
@@ -232,11 +232,11 @@
     "invoiceDate": "2024-02-25",
     "orderNumber": "З-2024-004",
     "personalFileId": "pf-005",
-    "clientName": "Морозов Владимир Петрович",
+    "clientName": "Абдыкадыров Александр Николаевич",
     "productName": "Слуховой аппарат",
     "quantity": 1,
-    "unitPrice": 80000,
-    "totalAmount": 80000,
+    "unitPrice": 8000,
+    "totalAmount": 8000,
     "status": "approved",
     "priority": "normal",
     "productCategory": "Слуховые аппараты",
@@ -247,8 +247,8 @@
         "name": "Слуховой аппарат цифровой",
         "unit": "шт",
         "quantity": 1,
-        "price": 70000,
-        "totalPrice": 70000,
+        "price": 7000,
+        "totalPrice": 7000,
         "notes": "Цифровая модель"
       },
       {
@@ -257,8 +257,8 @@
         "name": "Батарейки",
         "unit": "компл",
         "quantity": 2,
-        "price": 5000,
-        "totalPrice": 10000,
+        "price": 500,
+        "totalPrice": 1000,
         "notes": "Комплект батареек"
       }
     ],

@@ -19,8 +19,8 @@
         "unit": "м²",
         "quantityPlanned": 2.5,
         "quantityUsed": 2.3,
-        "unitPrice": 1500,
-        "totalCost": 3450,
+        "unitPrice": 150,
+        "totalCost": 345,
         "notes": "Высококачественное волокно"
       },
       {
@@ -31,8 +31,8 @@
         "unit": "кг",
         "quantityPlanned": 1.0,
         "quantityUsed": 0.8,
-        "unitPrice": 800,
-        "totalCost": 640,
+        "unitPrice": 80,
+        "totalCost": 64,
         "notes": "Быстроотверждаемая"
       },
       {
@@ -43,8 +43,8 @@
         "unit": "шт",
         "quantityPlanned": 1,
         "quantityUsed": 1,
-        "unitPrice": 2500,
-        "totalCost": 2500,
+        "unitPrice": 250,
+        "totalCost": 250,
         "notes": "Для крепления"
       }
     ],
@@ -57,7 +57,7 @@
       "completionDate": null,
       "qualityNotes": null
     },
-    "assignedWorker": "Иванов И.И.",
+    "assignedWorker": "Абдыкадыров И.И.",
     "workshop": "Цех протезирования",
     "priority": "Высокий",
     "status": "В работе",
@@ -85,8 +85,8 @@
         "unit": "м²",
         "quantityPlanned": 0.5,
         "quantityUsed": 0.5,
-        "unitPrice": 2000,
-        "totalCost": 1000,
+        "unitPrice": 200,
+        "totalCost": 100,
         "notes": "Черная кожа"
       },
       {
@@ -97,8 +97,8 @@
         "unit": "шт",
         "quantityPlanned": 2,
         "quantityUsed": 2,
-        "unitPrice": 300,
-        "totalCost": 600,
+        "unitPrice": 30,
+        "totalCost": 60,
         "notes": "Антискользящая"
       }
     ],
@@ -111,7 +111,7 @@
       "completionDate": "2024-02-18",
       "qualityNotes": "Качество отличное, соответствует требованиям"
     },
-    "assignedWorker": "Петров П.П.",
+    "assignedWorker": "Абдыкадыров П.П.",
     "workshop": "Цех обуви",
     "priority": "Средний",
     "status": "Готово",
@@ -139,8 +139,8 @@
         "unit": "шт",
         "quantityPlanned": 4,
         "quantityUsed": 3,
-        "unitPrice": 50,
-        "totalCost": 150,
+        "unitPrice": 5,
+        "totalCost": 15,
         "notes": "Нержавеющая сталь"
       },
       {
@@ -151,8 +151,8 @@
         "unit": "тюбик",
         "quantityPlanned": 1,
         "quantityUsed": 1,
-        "unitPrice": 200,
-        "totalCost": 200,
+        "unitPrice": 20,
+        "totalCost": 20,
         "notes": "Для склеивания"
       }
     ],
@@ -165,7 +165,7 @@
       "completionDate": null,
       "qualityNotes": "Ремонт выполнен качественно"
     },
-    "assignedWorker": "Сидоров С.С.",
+    "assignedWorker": "Абдыкадыров С.С.",
     "workshop": "Цех ремонта",
     "priority": "Средний",
     "status": "В работе",
