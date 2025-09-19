@@ -2,6 +2,7 @@
   "name": "rupoi-dashboard",
   "version": "1.0.0",
   "description": "Дашборд для РУПОИ - система управления ортопедическими услугами",
+  "homepage": "https://avtanos.github.io/rupio",
   "private": true,
   "dependencies": {
     "@types/node": "^16.18.0",
