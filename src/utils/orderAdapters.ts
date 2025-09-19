@@ -1,10 +1,10 @@
 import { WorkOrder } from '../types/orders';
 import { ProsthesisOrder, ProsthesisDiagnosis, ProsthesisOrderType } from '../types/prosthesisOrder';
 import { FootwearOrder, FootwearDiagnosis } from '../types/footwearOrder';
-import { OttobockOrder, OttobockProductType, OttobockDiagnosis, OttobockSide, OttobockOrderType, OttobockOrderStatus, OttobockServiceType, OttobockMaterial, OttobockFitting } from '../types/ottobockOrder';
-import { OrthosisOrder, OrthosisProductType, OrthosisDiagnosis, OrthosisSide, OrthosisOrderType, OrthosisOrderStatus, OrthosisServiceType, OrthosisMaterial, OrthosisFitting } from '../types/orthosisOrder';
-import { RepairOrder, RepairProductType, RepairOrderStatus, RepairServiceType, RepairMaterial, RepairFitting } from '../types/repairOrder';
-import { ReadyPoiOrder, ReadyPoiProductType, ReadyPoiDiagnosis, ReadyPoiOrderType, ReadyPoiOrderStatus, ReadyPoiServiceType, ReadyPoiMaterial, ReadyPoiFitting } from '../types/readyPoiOrder';
+import { OttobockOrder, OttobockProductType, OttobockDiagnosis, OttobockSide, OttobockOrderType, OttobockOrderStatus, OttobockServiceType } from '../types/ottobockOrder';
+import { OrthosisOrder, OrthosisProductType, OrthosisDiagnosis, OrthosisSide, OrthosisOrderType, OrthosisOrderStatus, OrthosisServiceType } from '../types/orthosisOrder';
+import { RepairOrder, RepairProductType, RepairOrderStatus, RepairServiceType } from '../types/repairOrder';
+import { ReadyPoiOrder, ReadyPoiProductType, ReadyPoiDiagnosis, ReadyPoiOrderType, ReadyPoiOrderStatus, ReadyPoiServiceType } from '../types/readyPoiOrder';
 
 export const adaptWorkOrderToProsthesisOrder = (workOrder: WorkOrder): ProsthesisOrder | null => {
   // Проверяем, что это заказ на изготовление протеза
