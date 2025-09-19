@@ -1,1 +1,99 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"/><link rel="icon" href="/rupio/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Дашборд РУПОИ - система управления ортопедическими услугами"/><title>РУПОИ - Дашборд</title><script defer="defer" src="/rupio/static/js/main.cb3246eb.js"></script><link href="/rupio/static/css/main.37c88797.css" rel="stylesheet"></head><body><noscript>Вам необходимо включить JavaScript для работы этого приложения.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РУПОИ - Система управления ортопедическими услугами</title>
+    <meta name="description" content="Веб-приложение для управления ортопедическими услугами и реабилитационными направлениями">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .loading {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 1rem;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+            margin: 0 10px;
+        }
+        .link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥 РУПОИ</div>
+        <div class="description">Система управления ортопедическими услугами</div>
+        <div class="loading"></div>
+        <p>Загрузка приложения...</p>
+        
+        <div class="status">
+            <h3>Статус деплоя</h3>
+            <p>Если вы видите эту страницу, значит GitHub Pages работает, но React приложение еще не загружено.</p>
+            <p>Проверьте настройки GitHub Pages в репозитории.</p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <a href="https://github.com/avtanos/rupio" class="link">GitHub Repository</a>
+            <a href="https://github.com/avtanos/rupio/settings/pages" class="link">Настройки Pages</a>
+        </div>
+    </div>
+    
+    <script>
+        // Автоматическое перенаправление через 5 секунд
+        setTimeout(() => {
+            window.location.reload();
+        }, 5000);
+    </script>
+</body>
+</html>
