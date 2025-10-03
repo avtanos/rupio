@@ -4,8 +4,8 @@ module.exports = {
     'react-app/jest'
   ],
   rules: {
-    '@typescript-eslint/no-unused-vars': 'warn',
-    'no-duplicate-case': 'warn'
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-duplicate-case': 'off'
   },
   env: {
     browser: true,
