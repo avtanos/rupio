@@ -1,0 +1,102 @@
+[
+  {
+    "id": "MAT-001",
+    "name": "Углеродное волокно",
+    "code": "CF-001",
+    "unit": "м²",
+    "category": "Композитные материалы",
+    "unitPrice": 1500,
+    "description": "Высокопрочное углеродное волокно для протезов",
+    "supplier": "CarbonTech Ltd"
+  },
+  {
+    "id": "MAT-002",
+    "name": "Эпоксидная смола",
+    "code": "EP-001",
+    "unit": "кг",
+    "category": "Связующие материалы",
+    "unitPrice": 800,
+    "description": "Быстроотверждаемая эпоксидная смола",
+    "supplier": "EpoxyCorp"
+  },
+  {
+    "id": "MAT-003",
+    "name": "Титан (лист)",
+    "code": "TI-001",
+    "unit": "шт",
+    "category": "Металлические материалы",
+    "unitPrice": 2500,
+    "description": "Титановый лист для креплений",
+    "supplier": "TitaniumWorks"
+  },
+  {
+    "id": "MAT-004",
+    "name": "Кожа натуральная",
+    "code": "LE-001",
+    "unit": "м²",
+    "category": "Кожевенные материалы",
+    "unitPrice": 2000,
+    "description": "Натуральная кожа для обуви",
+    "supplier": "LeatherMaster"
+  },
+  {
+    "id": "MAT-005",
+    "name": "Подошва резиновая",
+    "code": "RB-001",
+    "unit": "шт",
+    "category": "Резиновые изделия",
+    "unitPrice": 300,
+    "description": "Антискользящая резиновая подошва",
+    "supplier": "RubberTech"
+  },
+  {
+    "id": "MAT-006",
+    "name": "Крепежные винты",
+    "code": "SC-001",
+    "unit": "шт",
+    "category": "Крепежные элементы",
+    "unitPrice": 50,
+    "description": "Винты из нержавеющей стали",
+    "supplier": "FastenerPro"
+  },
+  {
+    "id": "MAT-007",
+    "name": "Клей эпоксидный",
+    "code": "GL-001",
+    "unit": "тюбик",
+    "category": "Клеящие материалы",
+    "unitPrice": 200,
+    "description": "Эпоксидный клей для склеивания",
+    "supplier": "GlueCorp"
+  },
+  {
+    "id": "MAT-008",
+    "name": "Полиэтилен высокой плотности",
+    "code": "PE-001",
+    "unit": "кг",
+    "category": "Полимерные материалы",
+    "unitPrice": 120,
+    "description": "HDPE для изготовления вкладышей",
+    "supplier": "PolymerTech"
+  },
+  {
+    "id": "MAT-009",
+    "name": "Алюминиевая трубка",
+    "code": "AL-001",
+    "unit": "м",
+    "category": "Металлические материалы",
+    "unitPrice": 400,
+    "description": "Алюминиевая трубка для каркасов",
+    "supplier": "AluminumWorks"
+  },
+  {
+    "id": "MAT-010",
+    "name": "Ткань хлопковая",
+    "code": "CT-001",
+    "unit": "м",
+    "category": "Текстильные материалы",
+    "unitPrice": 150,
+    "description": "Хлопковая ткань для подкладки",
+    "supplier": "TextileCorp"
+  }
+]

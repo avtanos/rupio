@@ -1,0 +1,118 @@
+{
+  "administration": {
+    "annualDisabledPersonsReport": {
+      "year": 2024,
+      "totalRegistered": 150,
+      "byRegion": [
+        { "region": "Минская область", "count": 80, "percentage": 53.3 },
+        { "region": "Гомельская область", "count": 35, "percentage": 23.3 },
+        { "region": "Витебская область", "count": 25, "percentage": 16.7 },
+        { "region": "Брестская область", "count": 10, "percentage": 6.7 }
+      ],
+      "byGender": [
+        { "gender": "мужской", "count": 85, "percentage": 56.7 },
+        { "gender": "женский", "count": 65, "percentage": 43.3 }
+      ],
+      "byCategory": [
+        { "category": "I группа", "count": 45, "percentage": 30.0 },
+        { "category": "II группа", "count": 60, "percentage": 40.0 },
+        { "category": "III группа", "count": 45, "percentage": 30.0 }
+      ]
+    },
+    "annualProductsReport": {
+      "year": 2024,
+      "totalOrders": 120,
+      "byProductType": [
+        { "type": "Ортопедическая обувь", "count": 60, "percentage": 50.0 },
+        { "type": "Корсеты", "count": 30, "percentage": 25.0 },
+        { "type": "Протезы", "count": 20, "percentage": 16.7 },
+        { "type": "Коляски", "count": 10, "percentage": 8.3 }
+      ],
+      "byRegion": [
+        { "region": "Минская область", "orders": 65, "percentage": 54.2 },
+        { "region": "Гомельская область", "orders": 30, "percentage": 25.0 },
+        { "region": "Витебская область", "orders": 15, "percentage": 12.5 },
+        { "region": "Брестская область", "orders": 10, "percentage": 8.3 }
+      ]
+    }
+  },
+  "workshop": {
+    "monthlyMaterialsConsumption": {
+      "month": "2024-01",
+      "materials": [
+        { "material": "Кожа", "consumed": 150, "unit": "м²", "cost": 15000, "previousMonth": 120, "change": 25.0 },
+        { "material": "Металл", "consumed": 80, "unit": "кг", "cost": 8000, "previousMonth": 70, "change": 14.3 },
+        { "material": "Пластик", "consumed": 60, "unit": "кг", "cost": 6000, "previousMonth": 50, "change": 20.0 }
+      ],
+      "totalCost": 29000,
+      "previousMonthCost": 24000,
+      "costChange": 20.8
+    },
+    "monthlyLeatherTextileConsumption": {
+      "month": "2024-01",
+      "leatherMaterials": [
+        { "material": "Натуральная кожа", "consumed": 100, "unit": "м²", "products": ["Обувь", "Корсеты"] },
+        { "material": "Искусственная кожа", "consumed": 50, "unit": "м²", "products": ["Обувь"] }
+      ],
+      "textileMaterials": [
+        { "material": "Хлопок", "consumed": 200, "unit": "м²", "products": ["Корсеты", "Одежда"] },
+        { "material": "Лен", "consumed": 100, "unit": "м²", "products": ["Корсеты"] }
+      ],
+      "totalLeatherCost": 15000,
+      "totalTextileCost": 8000,
+      "totalCost": 23000
+    }
+  },
+  "warehouse": {
+    "monthlyFootwearReport": {
+      "month": "2024-01",
+      "receipts": [
+        { "date": "2024-01-05", "quantity": 20, "type": "Ортопедическая обувь" },
+        { "date": "2024-01-15", "quantity": 15, "type": "Ортопедическая обувь" },
+        { "date": "2024-01-25", "quantity": 10, "type": "Ортопедическая обувь" }
+      ],
+      "issuances": [
+        { "date": "2024-01-10", "quantity": 12, "type": "Ортопедическая обувь", "clientId": "C001" },
+        { "date": "2024-01-20", "quantity": 8, "type": "Ортопедическая обувь", "clientId": "C002" }
+      ],
+      "totalReceived": 45,
+      "totalIssued": 20,
+      "remaining": 25
+    },
+    "monthlyProsthesesReport": {
+      "month": "2024-01",
+      "receipts": [
+        { "date": "2024-01-08", "quantity": 5, "type": "Протез ноги" },
+        { "date": "2024-01-18", "quantity": 3, "type": "Протез руки" }
+      ],
+      "issuances": [
+        { "date": "2024-01-12", "quantity": 2, "type": "Протез ноги", "clientId": "C003" }
+      ],
+      "totalReceived": 8,
+      "totalIssued": 2,
+      "remaining": 6
+    },
+    "monthlyWheelchairsReport": {
+      "month": "2024-01",
+      "receipts": [
+        { "date": "2024-01-10", "quantity": 3, "type": "Инвалидная коляска" },
+        { "date": "2024-01-22", "quantity": 2, "type": "Инвалидная коляска" }
+      ],
+      "issuances": [
+        { "date": "2024-01-15", "quantity": 1, "type": "Инвалидная коляска", "clientId": "C001" }
+      ],
+      "totalReceived": 5,
+      "totalIssued": 1,
+      "remaining": 4
+    },
+    "finishedProductsReport": {
+      "month": "2024-01",
+      "products": [
+        { "type": "Ортопедическая обувь", "received": 45, "issued": 20, "remaining": 25, "examples": ["З-2024-001", "З-2024-003"] },
+        { "type": "Корсеты", "received": 20, "issued": 15, "remaining": 5, "examples": ["З-2024-002"] },
+        { "type": "Протезы", "received": 8, "issued": 2, "remaining": 6, "examples": ["З-2024-004"] },
+        { "type": "Коляски", "received": 5, "issued": 1, "remaining": 4, "examples": ["З-2024-005"] }
+      ]
+    }
+  }
+}
