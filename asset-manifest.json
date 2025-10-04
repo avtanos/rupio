@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rupio/static/css/main.21290e3e.css",
-    "main.js": "/rupio/static/js/main.0a125a0e.js",
+    "main.js": "/rupio/static/js/main.1fbed28f.js",
     "index.html": "/rupio/index.html",
     "main.21290e3e.css.map": "/rupio/static/css/main.21290e3e.css.map",
-    "main.0a125a0e.js.map": "/rupio/static/js/main.0a125a0e.js.map"
+    "main.1fbed28f.js.map": "/rupio/static/js/main.1fbed28f.js.map"
   },
   "entrypoints": [
     "static/css/main.21290e3e.css",
-    "static/js/main.0a125a0e.js"
+    "static/js/main.1fbed28f.js"
   ]
 }
