@@ -943,7 +943,7 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
         );
-        case 'registration':
+      case 'registration':
           return (
             <RegistrationStage
               clients={clients}
