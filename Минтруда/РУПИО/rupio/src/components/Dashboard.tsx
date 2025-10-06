@@ -6,7 +6,7 @@ import { RehabilitationDirection, RehabilitationDirectionFormData } from '../typ
 import { ManufacturingOrder, TransferOrder } from '../types/manufacturing';
 import { WarehouseProduct } from '../types/warehouse';
 import { clients as initialClients, orders as initialOrders, personalFiles as initialPersonalFiles, reports as initialReports, workOrders as initialWorkOrders, rehabilitationDirections as initialRehabilitationDirections, manufacturingOrders as initialManufacturingOrders, materialsCatalog as initialMaterialsCatalog, transferOrders as initialTransferOrders, warehouseProducts as initialWarehouseProducts, invoices as initialInvoices } from '../data';
-import { adaptWorkOrderToProsthesisOrder, adaptProsthesisOrderToWorkOrder, adaptWorkOrderToFootwearOrder, adaptFootwearOrderToWorkOrder, adaptWorkOrderToOrthosisOrder, adaptOrthosisOrderToWorkOrder, adaptWorkOrderToOttobockOrder, adaptOttobockOrderToWorkOrder, adaptWorkOrderToRepairOrder, adaptRepairOrderToWorkOrder, adaptWorkOrderToReadyPoiOrder, adaptReadyPoiOrderToWorkOrder } from '../utils/orderAdapters';
+import { adaptWorkOrderToProsthesisOrder, adaptProsthesisOrderToWorkOrder, adaptWorkOrderToFootwearOrder, adaptFootwearOrderToWorkOrder, adaptWorkOrderToOttobockOrder, adaptOttobockOrderToWorkOrder, adaptWorkOrderToRepairOrder, adaptRepairOrderToWorkOrder, adaptWorkOrderToReadyPoiOrder, adaptReadyPoiOrderToWorkOrder } from '../utils/orderAdapters';
 import ProsthesisPrintBlankComponent from './ProsthesisPrintBlank';
 import FootwearPrintBlankComponent from './FootwearPrintBlank';
 import { ProsthesisPrintBlank, FootwearPrintBlank } from '../types/printBlank';
@@ -39,7 +39,6 @@ import ChiefDoctorDashboard from './ChiefDoctorDashboard';
 import { Invoice, ProsthesisInvoice, FootwearInvoice, OttobockInvoice, RepairInvoice, ReadyPoiInvoice } from '../types/invoices';
 import { ProsthesisOrder } from '../types/prosthesisOrder';
 import { FootwearOrder } from '../types/footwearOrder';
-import { OrthosisOrder } from '../types/orthosisOrder';
 import { OttobockOrder } from '../types/ottobockOrder';
 import { RepairOrder } from '../types/repairOrder';
 import { ReadyPoiOrder } from '../types/readyPoiOrder';
@@ -82,11 +81,11 @@ const Dashboard: React.FC = () => {
   const [printBlankData, setPrintBlankData] = useState<ProsthesisPrintBlank | FootwearPrintBlank | null>(null);
   
   // Workflow и уведомления
-  const [notifications, setNotifications] = useState<Notification[]>([]);
-  const [workflowHistories, setWorkflowHistories] = useState<WorkflowHistory[]>([]);
-  const [departmentAssignments, setDepartmentAssignments] = useState<DepartmentAssignment[]>([]);
-  const [showLimbVisualization, setShowLimbVisualization] = useState(false);
-  const [selectedOrderForVisualization, setSelectedOrderForVisualization] = useState<string | null>(null);
+  const [, setNotifications] = useState<Notification[]>([]);
+  const [, setWorkflowHistories] = useState<WorkflowHistory[]>([]);
+  const [, setDepartmentAssignments] = useState<DepartmentAssignment[]>([]);
+  const [, setShowLimbVisualization] = useState(false);
+  const [, setSelectedOrderForVisualization] = useState<string | null>(null);
 
   useEffect(() => {
     // Данные загружены успешно
@@ -230,10 +229,6 @@ const Dashboard: React.FC = () => {
 
 
 
-  const handleNewOrthosisOrder = (order: OrthosisOrder) => {
-    const workOrder = adaptOrthosisOrderToWorkOrder(order);
-    setWorkOrders(prevOrders => [...prevOrders, workOrder]);
-  };
 
   const handleNewOttobockOrder = (order: OttobockOrder) => {
     const workOrder = adaptOttobockOrderToWorkOrder(order);
@@ -256,39 +251,7 @@ const Dashboard: React.FC = () => {
     setWorkOrders(prevOrders => prevOrders.filter(order => order.id !== id));
   };
 
-  const handleUpdateOrthosisOrder = (id: string, updates: Partial<OrthosisOrder>) => {
-    setWorkOrders(prevOrders => 
-      prevOrders.map(order => {
-        if (order.id === id) {
-          // Создаем обновленный WorkOrder, исключая поля, которые не должны обновляться
-          const { 
-            status, 
-            orderType, 
-            productType, 
-            diagnosis, 
-            side, 
-            isHospitalized, 
-            materials, 
-            urgencyReason, 
-            serviceType, 
-            orderCost, 
-            fittings, 
-            ...workOrderUpdates 
-          } = updates;
-          return { 
-            ...order, 
-            ...workOrderUpdates,
-            updatedAt: new Date().toISOString()
-          };
-        }
-        return order;
-      })
-    );
-  };
 
-  const handleDeleteOrthosisOrder = (id: string) => {
-    setWorkOrders(prevOrders => prevOrders.filter(order => order.id !== id));
-  };
 
   const handleNewRepairOrder = (order: RepairOrder) => {
     const workOrder = adaptRepairOrderToWorkOrder(order);
@@ -677,46 +640,10 @@ const Dashboard: React.FC = () => {
     return comments ? `${baseMessage}. Комментарий: ${comments}` : baseMessage;
   };
 
-  const handleNotificationAction = (notificationId: string) => {
-    setNotifications((prev: Notification[]) => 
-      prev.map((notif: Notification) => 
-        notif.id === notificationId ? { ...notif, isRead: true } : notif
-      )
-    );
-  };
 
-  const handleMarkAllNotificationsAsRead = () => {
-    setNotifications((prev: Notification[]) => 
-      prev.map((notif: Notification) => ({ ...notif, isRead: true }))
-    );
-  };
 
-  const handleDeleteNotification = (notificationId: string) => {
-    setNotifications((prev: Notification[]) => prev.filter((notif: Notification) => notif.id !== notificationId));
-  };
 
-  const handleAssignToDepartment = (orderId: string, department: string, priority: string, estimatedDate: string) => {
-    const assignment: DepartmentAssignment = {
-      id: `assign_${Date.now()}`,
-      orderId,
-      department: department as 'medical' | 'workshop' | 'warehouse' | 'dispatcher',
-      assignedBy: 'current_user',
-      assignedAt: new Date().toISOString(),
-      priority: priority as 'low' | 'medium' | 'high' | 'urgent',
-      estimatedCompletionDate: estimatedDate,
-      status: 'assigned'
-    };
 
-    setDepartmentAssignments((prev: DepartmentAssignment[]) => [...prev, assignment]);
-    
-    // Обновляем статус заказа
-    handleWorkflowAction(orderId, 'assign_to_production');
-  };
-
-  const handleShowLimbVisualization = (orderId: string) => {
-    setSelectedOrderForVisualization(orderId);
-    setShowLimbVisualization(true);
-  };
 
   const toggleSubmenu = (menuId: string) => {
     setExpandedMenus(prev => {
@@ -832,7 +759,7 @@ const Dashboard: React.FC = () => {
       actions: [
         'Изготовление',
         'Примерка',
-        'Составление накладной, печать',
+        'Составление накладной',
         'Отправка на склад готовой продукции'
       ],
       status: 'in_progress' as const,
