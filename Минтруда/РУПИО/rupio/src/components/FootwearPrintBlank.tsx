@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Printer, X, Plus, Trash2 } from 'lucide-react';
+import { Printer, X } from 'lucide-react';
 import { FootwearPrintBlank, FootwearMeasurements } from '../types/printBlank';
 import { 
   footwearDescriptions, 

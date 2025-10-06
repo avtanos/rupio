@@ -189,22 +189,6 @@ const PersonalFileForm: React.FC<PersonalFileFormProps> = ({
                 {errors.pin && <p className="text-red-500 text-sm mt-1">{errors.pin}</p>}
               </div>
               
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Документ <span className="text-red-500">*</span>
-                </label>
-                <select
-                  value={formData.documentType}
-                  onChange={(e) => handleInputChange('documentType', e.target.value)}
-                  className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    errors.documentType ? 'border-red-300' : 'border-gray-300'
-                  }`}
-                >
-                  <option value="Паспорт">Паспорт</option>
-                  <option value="Свидетельство о рождении">Свидетельство о рождении</option>
-                </select>
-                {errors.documentType && <p className="text-red-500 text-sm mt-1">{errors.documentType}</p>}
-              </div>
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -295,6 +279,22 @@ const PersonalFileForm: React.FC<PersonalFileFormProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Документ <span className="text-red-500">*</span>
+                </label>
+                <select
+                  value={formData.documentType}
+                  onChange={(e) => handleInputChange('documentType', e.target.value)}
+                  className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+                    errors.documentType ? 'border-red-300' : 'border-gray-300'
+                  }`}
+                >
+                  <option value="Паспорт">Паспорт</option>
+                  <option value="Свидетельство о рождении">Свидетельство о рождении</option>
+                </select>
+                {errors.documentType && <p className="text-red-500 text-sm mt-1">{errors.documentType}</p>}
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
                   Серия <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -315,7 +315,7 @@ const PersonalFileForm: React.FC<PersonalFileFormProps> = ({
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  № Паспорта <span className="text-red-500">*</span>
+                  № Документа <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"

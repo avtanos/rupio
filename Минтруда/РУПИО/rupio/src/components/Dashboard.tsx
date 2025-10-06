@@ -18,11 +18,8 @@ import WarehouseStage from './WarehouseStage';
 import AdministrationReports from './reports/AdministrationReports';
 import WorkshopReports from './reports/WorkshopReports';
 import WarehouseReports from './reports/WarehouseReports';
-import OrdersManagement from './OrdersManagement';
-import InvoicesManagement from './InvoicesManagement';
 import ProsthesisOrdersPage from './ProsthesisOrdersPage';
 import FootwearOrdersPage from './FootwearOrdersPage';
-import OrthosisOrdersPage from './OrthosisOrdersPage';
 import OttobockOrdersPage from './OttobockOrdersPage';
 import RepairOrdersPage from './RepairOrdersPage';
 import ReadyPoiOrdersPage from './ReadyPoiOrdersPage';
@@ -37,12 +34,8 @@ import ReadyPoiInvoicesPage from './ReadyPoiInvoicesPage';
 import PermissionsTable from './PermissionsTable';
 import RoleSelector from './RoleSelector';
 import RoleIndicator from './RoleIndicator';
-import { UserRole, ROLE_NAVIGATION, canView, canCreate, canEdit, canDelete, canPrint } from '../types/roles';
-import WorkflowManager from './WorkflowManager';
-import NotificationCenter from './NotificationCenter';
+import { UserRole, ROLE_NAVIGATION } from '../types/roles';
 import ChiefDoctorDashboard from './ChiefDoctorDashboard';
-import DispatcherDashboard from './DispatcherDashboard';
-import LimbVisualizationEditor from './LimbVisualizationEditor';
 import { Invoice, ProsthesisInvoice, FootwearInvoice, OttobockInvoice, RepairInvoice, ReadyPoiInvoice } from '../types/invoices';
 import { ProsthesisOrder } from '../types/prosthesisOrder';
 import { FootwearOrder } from '../types/footwearOrder';
@@ -63,8 +56,7 @@ import {
   X,
   FileText,
   ClipboardList,
-  Receipt,
-  Archive
+  Receipt
 } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
@@ -78,7 +70,7 @@ const Dashboard: React.FC = () => {
   const [transferOrders, setTransferOrders] = useState<TransferOrder[]>(initialTransferOrders as unknown as TransferOrder[]);
   const [warehouseProducts, setWarehouseProducts] = useState<WarehouseProduct[]>(initialWarehouseProducts as unknown as WarehouseProduct[]);
   const [invoices, setInvoices] = useState<Invoice[]>(initialInvoices as unknown as Invoice[]);
-  const [reportData, setReportData] = useState<ReportData | null>(initialReports as unknown as ReportData);
+  const [reportData] = useState<ReportData | null>(initialReports as unknown as ReportData);
   const [activeTab, setActiveTab] = useState('process');
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -621,7 +613,7 @@ const Dashboard: React.FC = () => {
       actionRequired: action === 'approve' || action === 'reject'
     };
 
-    setNotifications(prev => [notification, ...prev]);
+    setNotifications((prev: Notification[]) => [notification, ...prev]);
   };
 
   const getNewWorkflowStatus = (action: WorkflowAction): WorkflowStatus => {
@@ -686,21 +678,21 @@ const Dashboard: React.FC = () => {
   };
 
   const handleNotificationAction = (notificationId: string) => {
-    setNotifications(prev => 
-      prev.map(notif => 
+    setNotifications((prev: Notification[]) => 
+      prev.map((notif: Notification) => 
         notif.id === notificationId ? { ...notif, isRead: true } : notif
       )
     );
   };
 
   const handleMarkAllNotificationsAsRead = () => {
-    setNotifications(prev => 
-      prev.map(notif => ({ ...notif, isRead: true }))
+    setNotifications((prev: Notification[]) => 
+      prev.map((notif: Notification) => ({ ...notif, isRead: true }))
     );
   };
 
   const handleDeleteNotification = (notificationId: string) => {
-    setNotifications(prev => prev.filter(notif => notif.id !== notificationId));
+    setNotifications((prev: Notification[]) => prev.filter((notif: Notification) => notif.id !== notificationId));
   };
 
   const handleAssignToDepartment = (orderId: string, department: string, priority: string, estimatedDate: string) => {
@@ -715,7 +707,7 @@ const Dashboard: React.FC = () => {
       status: 'assigned'
     };
 
-    setDepartmentAssignments(prev => [...prev, assignment]);
+    setDepartmentAssignments((prev: DepartmentAssignment[]) => [...prev, assignment]);
     
     // Обновляем статус заказа
     handleWorkflowAction(orderId, 'assign_to_production');
@@ -944,7 +936,7 @@ const Dashboard: React.FC = () => {
           </div>
         );
       case 'registration':
-          return (
+        return (
             <RegistrationStage
               clients={clients}
               orders={orders}

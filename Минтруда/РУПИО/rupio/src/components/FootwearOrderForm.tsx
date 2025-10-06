@@ -16,7 +16,7 @@ import {
 import { PersonalFile } from '../types/personalFile';
 import TechnicalOperationsTable from './TechnicalOperationsTable';
 import FootwearFittingsManager from './FootwearFittingsManager';
-import { X, Save, AlertCircle, Plus, Trash2, Printer } from 'lucide-react';
+import { X, Save, Plus, Trash2, Printer } from 'lucide-react';
 
 interface FootwearOrderFormProps {
   order?: FootwearOrder;

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Plus, Search, Filter, Edit, Eye, Trash2, Printer, Download, CheckCircle, Clock, AlertCircle, Package, User, Calendar, DollarSign, FileText, Footprints, X } from 'lucide-react';
-import { FootwearInvoice, InvoiceFilters, InvoiceStats, InvoiceStatus, InvoicePriority } from '../types/invoices';
+import { Plus, Search, Filter, Edit, Eye, Trash2, Printer, CheckCircle, Clock, AlertCircle, Package, User, Calendar, DollarSign, FileText, Footprints } from 'lucide-react';
+import { FootwearInvoice, InvoiceFilters, InvoiceStats } from '../types/invoices';
 import { PersonalFile } from '../types/personalFile';
 import { Order } from '../types';
 import FootwearInvoiceForm from './FootwearInvoiceForm';

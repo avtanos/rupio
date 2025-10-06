@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Plus, Search, Filter, Edit, Eye, Trash2, Package, Clock, CheckCircle, AlertCircle, Wrench, Truck, Calendar, User } from 'lucide-react';
-import { ManufacturingOrder, ManufacturingFilters, TransferOrder, ConsumableMaterial } from '../types/manufacturing';
+import { Plus, Search, Filter, Eye, Trash2, Package, Clock, CheckCircle, AlertCircle, Wrench, Truck, Calendar, User } from 'lucide-react';
+import { ManufacturingOrder, TransferOrder, ConsumableMaterial } from '../types/manufacturing';
 import { Material } from '../types';
 import { PersonalFile } from '../types/personalFile';
 import { WorkOrder } from '../types/orders';
@@ -42,7 +42,7 @@ const ManufacturingOrdersPage: React.FC<ManufacturingOrdersPageProps> = ({
   const [showMaterials, setShowMaterials] = useState(false);
   const [showReadiness, setShowReadiness] = useState(false);
   const [showTransferForm, setShowTransferForm] = useState(false);
-  const [editingTransferOrder, setEditingTransferOrder] = useState<any>(null);
+  const [editingTransferOrder] = useState<any>(null);
 
   const statusOptions = [
     { value: 'all', label: 'Все статусы' },
