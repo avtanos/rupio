@@ -11,7 +11,7 @@ import {
 import { PersonalFile } from '../types/personalFile';
 import RepairMaterialsTable from './RepairMaterialsTable';
 import RepairFittingsManager from './RepairFittingsManager';
-import { X, Save, AlertCircle, Plus, Trash2 } from 'lucide-react';
+import { X, Save, Plus, Trash2 } from 'lucide-react';
 
 interface RepairOrderFormProps {
   order?: RepairOrder;

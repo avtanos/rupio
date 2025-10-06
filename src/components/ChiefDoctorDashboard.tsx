@@ -31,7 +31,7 @@ const ChiefDoctorDashboard: React.FC<ChiefDoctorDashboardProps> = ({
   const [comments, setComments] = useState('');
   const [activeTab, setActiveTab] = useState<'orders' | 'team'>('orders');
   const [searchTerm, setSearchTerm] = useState('');
-  const [dateRange, setDateRange] = useState({ from: '', to: '' });
+  const [dateRange] = useState({ from: '', to: '' });
 
   // Фильтрация заказов, требующих одобрения главного врача
   const pendingOrders = useMemo(() => {

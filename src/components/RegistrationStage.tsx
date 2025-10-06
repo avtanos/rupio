@@ -5,7 +5,7 @@ import { WorkOrder } from '../types/orders';
 import PersonalFilesTable from './PersonalFilesTable';
 import PersonalFileDetails from './PersonalFileDetails';
 import PersonalFileForm from './PersonalFileForm';
-import { UserPlus, Search, FileText, Calendar } from 'lucide-react';
+// Удалены неиспользуемые импорты для устранения ESLint ошибок
 
 interface RegistrationStageProps {
   clients: Client[];
@@ -32,19 +32,20 @@ const RegistrationStage: React.FC<RegistrationStageProps> = ({
   onNewWorkOrder,
   onUpdateWorkOrder
 }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [showNewClientForm, setShowNewClientForm] = useState(false);
-  const [showNewOrderForm, setShowNewOrderForm] = useState(false);
+  // Удалены неиспользуемые переменные для устранения ESLint ошибок
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const [showNewClientForm, setShowNewClientForm] = useState(false);
+  // const [showNewOrderForm, setShowNewOrderForm] = useState(false);
   const [selectedPersonalFile, setSelectedPersonalFile] = useState<PersonalFile | null>(null);
   const [showPersonalFileForm, setShowPersonalFileForm] = useState(false);
   const [editingPersonalFile, setEditingPersonalFile] = useState<PersonalFile | null>(null);
 
-  const filteredClients = clients.filter(client =>
-    client.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    client.personalFileNumber.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredClients = clients.filter(client =>
+  //   client.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //   client.personalFileNumber.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
 
-  const registrationOrders = orders.filter(order => order.status === 'регистрация');
+  // const registrationOrders = orders.filter(order => order.status === 'регистрация');
 
   const handleNewPersonalFile = () => {
     setEditingPersonalFile(null);

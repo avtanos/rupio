@@ -4,7 +4,7 @@ import { PersonalFile } from '../types/personalFile';
 import { ProsthesisDiagnosis } from '../types/prosthesisOrder';
 import ProsthesisOrderForm from './ProsthesisOrderForm';
 import FootwearOrderForm from './FootwearOrderForm';
-import { X, Save, Package } from 'lucide-react';
+import { X, Save } from 'lucide-react';
 import { footwearDiagnoses, footwearModels, footwearColors, footwearMaterials, heelMaterials, technicalOperationsList } from '../data/footwearReferences';
 
 interface OrderFormProps {

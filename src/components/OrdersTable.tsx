@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { WorkOrder, OrderSearchParams, OrderType, OrderStatus } from '../types/orders';
-import { Search, X, Plus, Eye, Edit, Calendar, User, Package } from 'lucide-react';
+import { Search, X, Plus, Eye, Edit, User, Package } from 'lucide-react';
 
 interface OrdersTableProps {
   orders: WorkOrder[];
@@ -94,20 +94,7 @@ const OrdersTable: React.FC<OrdersTableProps> = ({
     }
   };
 
-  const getOrderTypeColor = (orderType: OrderType) => {
-    switch (orderType) {
-      case 'Заказ на изготовление протеза':
-        return 'bg-purple-100 text-purple-800';
-      case 'Заказ на изготовление обуви':
-        return 'bg-orange-100 text-orange-800';
-      case 'Заказ на изготовление Оттобок':
-        return 'bg-cyan-100 text-cyan-800';
-      case 'Наряд на ремонт':
-        return 'bg-pink-100 text-pink-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
-    }
-  };
+  // Удалена неиспользуемая функция getOrderTypeColor для устранения ESLint ошибки
 
   return (
     <div className="space-y-6">

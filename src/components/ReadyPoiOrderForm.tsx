@@ -13,7 +13,7 @@ import {
 import { PersonalFile } from '../types/personalFile';
 import ReadyPoiMaterialsTable from './ReadyPoiMaterialsTable';
 import ReadyPoiFittingsManager from './ReadyPoiFittingsManager';
-import { X, Save, AlertCircle, Plus, Trash2 } from 'lucide-react';
+import { X, Save, Plus, Trash2 } from 'lucide-react';
 
 interface ReadyPoiOrderFormProps {
   order?: ReadyPoiOrder;

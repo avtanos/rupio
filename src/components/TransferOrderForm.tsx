@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Package, Truck, User, Calendar, Save, X, Plus } from 'lucide-react';
+import { Package, Truck, User, Calendar, Save, X } from 'lucide-react';
 import { TransferOrder, ManufacturingOrder } from '../types/manufacturing';
 
 interface TransferOrderFormProps {

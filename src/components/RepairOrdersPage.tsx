@@ -3,7 +3,7 @@ import { RepairOrder } from '../types/repairOrder';
 import { PersonalFile } from '../types/personalFile';
 import RepairOrderForm from './RepairOrderForm';
 import { repairProductTypes, materialUnits, defaultMaterials } from '../data/repairReferences';
-import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, CheckCircle, Clock, Package, Wrench, Printer } from 'lucide-react';
+import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, Clock, Wrench, Printer } from 'lucide-react';
 
 interface RepairOrdersPageProps {
   orders: RepairOrder[];

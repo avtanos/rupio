@@ -14,7 +14,7 @@ import {
 import { PersonalFile } from '../types/personalFile';
 import OttobockMaterialsTable from './OttobockMaterialsTable';
 import OttobockFittingsManager from './OttobockFittingsManager';
-import { X, Save, AlertCircle, Plus, Trash2 } from 'lucide-react';
+import { X, Save, Plus, Trash2 } from 'lucide-react';
 
 interface OttobockOrderFormProps {
   order?: OttobockOrder;

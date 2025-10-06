@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, Save, X } from 'lucide-react';
-import { ProsthesisInvoice, ProsthesisInvoiceComponent, ProsthesisMeasurements } from '../types/invoices';
+import { ProsthesisInvoice, ProsthesisInvoiceComponent } from '../types/invoices';
 import { PersonalFile } from '../types/personalFile';
 import { Order } from '../types';
 

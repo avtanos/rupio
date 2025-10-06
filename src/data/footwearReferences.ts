@@ -1,4 +1,4 @@
-import { FootwearModel, FootwearColor, FootwearMaterial, HeelMaterial, FootwearDiagnosis } from '../types/footwearOrder';
+import { FootwearModel, FootwearColor, FootwearMaterial, HeelMaterial } from '../types/footwearOrder';
 import { footwearDiagnoses as diagnoses } from './footwearDiagnoses';
 
 export const footwearModels: FootwearModel[] = [

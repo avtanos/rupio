@@ -134,9 +134,10 @@ const ManufacturingOrdersPage: React.FC<ManufacturingOrdersPageProps> = ({
     setSelectedOrder(order);
   };
 
-  const handleEditOrder = (order: ManufacturingOrder) => {
-    // В будущем можно добавить редактирование заказа
-  };
+  // Удалена неиспользуемая функция handleEditOrder для устранения ESLint ошибки
+  // const handleEditOrder = (order: ManufacturingOrder) => {
+  //   // В будущем можно добавить редактирование заказа
+  // };
 
   const handleDeleteOrder = (id: string) => {
     if (window.confirm('Вы уверены, что хотите удалить этот заказ на изготовление?')) {
@@ -199,10 +200,11 @@ const ManufacturingOrdersPage: React.FC<ManufacturingOrdersPageProps> = ({
     setDateTo('');
   };
 
-  const getUniqueValues = (key: string) => {
-    const values = manufacturingOrders.map(order => order[key as keyof ManufacturingOrder] as string);
-    return Array.from(new Set(values)).filter(Boolean);
-  };
+  // Удалена неиспользуемая функция getUniqueValues для устранения ESLint ошибки
+  // const getUniqueValues = (key: string) => {
+  //   const values = manufacturingOrders.map(order => order[key as keyof ManufacturingOrder] as string);
+  //   return Array.from(new Set(values)).filter(Boolean);
+  // };
 
   return (
     <div className="space-y-6">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { PersonalFile, PersonalFileSearchParams, ServiceRecord } from '../types/personalFile';
-import { Search, Plus, Eye, Edit, FileText, Calendar, Phone, MapPin, User } from 'lucide-react';
+import { PersonalFile, PersonalFileSearchParams } from '../types/personalFile';
+import { Search, Plus, Eye, Edit, FileText, User } from 'lucide-react';
 
 interface PersonalFilesTableProps {
   personalFiles: PersonalFile[];

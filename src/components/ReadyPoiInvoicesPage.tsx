@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Plus, Search, Filter, Edit, Eye, Trash2, Printer, Download, CheckCircle, Clock, AlertCircle, Package, User, Calendar, DollarSign, FileText, Accessibility } from 'lucide-react';
+import { Plus, Search, Filter, Edit, Eye, Trash2, Printer, CheckCircle, Clock, AlertCircle, Package, User, Calendar, DollarSign, FileText, Accessibility } from 'lucide-react';
 import { ReadyPoiInvoice, InvoiceFilters, InvoiceStats } from '../types/invoices';
 import { PersonalFile } from '../types/personalFile';
 import { Order } from '../types';

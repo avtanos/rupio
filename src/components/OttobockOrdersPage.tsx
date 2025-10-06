@@ -3,7 +3,7 @@ import { OttobockOrder } from '../types/ottobockOrder';
 import { PersonalFile } from '../types/personalFile';
 import OttobockOrderForm from './OttobockOrderForm';
 import { ottobockProductTypes, ottobockDiagnoses, materialUnits, defaultMaterials } from '../data/ottobockReferences';
-import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, CheckCircle, Clock, Package, Printer } from 'lucide-react';
+import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, Clock, Package, Printer } from 'lucide-react';
 
 interface OttobockOrdersPageProps {
   orders: OttobockOrder[];

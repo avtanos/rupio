@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Plus, Search, Filter, Edit, Eye, Trash2, Calendar, User, FileText, Stethoscope, CheckCircle, Clock, AlertCircle } from 'lucide-react';
-import { RehabilitationDirection, RehabilitationDirectionFilters, RehabilitationDirectionFormData } from '../types/rehabilitation';
+import { RehabilitationDirection, RehabilitationDirectionFormData } from '../types/rehabilitation';
 import { PersonalFile } from '../types/personalFile';
 import RehabilitationDirectionForm from './RehabilitationDirectionForm';
 

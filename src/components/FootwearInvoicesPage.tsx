@@ -196,41 +196,42 @@ const FootwearInvoicesPage: React.FC<FootwearInvoicesPageProps> = ({
     }
   };
 
-  const handleSubmitInvoice = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!editingInvoice) return;
+  // Удалена неиспользуемая функция handleSubmitInvoice для устранения ESLint ошибки
+  // const handleSubmitInvoice = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (!editingInvoice) return;
 
-    const invoiceData: Omit<FootwearInvoice, 'id' | 'createdAt' | 'updatedAt'> = {
-      ...editingInvoice,
-      invoiceNumber: editingInvoice.invoiceNumber || `INV-${Date.now()}`,
-      invoiceDate: editingInvoice.invoiceDate || new Date().toISOString().split('T')[0],
-      productName: editingInvoice.productName || editingInvoice.model,
-      unitPrice: editingInvoice.unitPrice || 0,
-      totalAmount: editingInvoice.totalAmount || (editingInvoice.quantity * (editingInvoice.unitPrice || 0)),
-      createdBy: editingInvoice.createdBy || 'Текущий пользователь',
-      type: 'footwear',
-      model: editingInvoice.model || '',
-      color: editingInvoice.color || '',
-      material: editingInvoice.material || '',
-      heelHeight: editingInvoice.heelHeight || 0,
-      heelMaterial: editingInvoice.heelMaterial || '',
-      size: editingInvoice.size || '',
-      technicalOperations: editingInvoice.technicalOperations || [],
-      fittings: editingInvoice.fittings || [],
-      needsCast: editingInvoice.needsCast || false,
-      leftLegShortening: editingInvoice.leftLegShortening || 0,
-      rightLegShortening: editingInvoice.rightLegShortening || 0
-    };
+  //   const invoiceData: Omit<FootwearInvoice, 'id' | 'createdAt' | 'updatedAt'> = {
+  //     ...editingInvoice,
+  //     invoiceNumber: editingInvoice.invoiceNumber || `INV-${Date.now()}`,
+  //     invoiceDate: editingInvoice.invoiceDate || new Date().toISOString().split('T')[0],
+  //     productName: editingInvoice.productName || editingInvoice.model,
+  //     unitPrice: editingInvoice.unitPrice || 0,
+  //     totalAmount: editingInvoice.totalAmount || (editingInvoice.quantity * (editingInvoice.unitPrice || 0)),
+  //     createdBy: editingInvoice.createdBy || 'Текущий пользователь',
+  //     type: 'footwear',
+  //     model: editingInvoice.model || '',
+  //     color: editingInvoice.color || '',
+  //     material: editingInvoice.material || '',
+  //     heelHeight: editingInvoice.heelHeight || 0,
+  //     heelMaterial: editingInvoice.heelMaterial || '',
+  //     size: editingInvoice.size || '',
+  //     technicalOperations: editingInvoice.technicalOperations || [],
+  //     fittings: editingInvoice.fittings || [],
+  //     needsCast: editingInvoice.needsCast || false,
+  //     leftLegShortening: editingInvoice.leftLegShortening || 0,
+  //     rightLegShortening: editingInvoice.rightLegShortening || 0
+  //   };
 
-    if (editingInvoice.id) {
-      onUpdateInvoice(editingInvoice.id, invoiceData);
-    } else {
-      onNewInvoice(invoiceData);
-    }
+  //   if (editingInvoice.id) {
+  //     onUpdateInvoice(editingInvoice.id, invoiceData);
+  //   } else {
+  //     onNewInvoice(invoiceData);
+  //   }
 
-    setShowInvoiceForm(false);
-    setEditingInvoice(null);
-  };
+  //   setShowInvoiceForm(false);
+  //   setEditingInvoice(null);
+  // };
 
   const handlePrintInvoice = (id: string) => {
     onPrintInvoice(id);

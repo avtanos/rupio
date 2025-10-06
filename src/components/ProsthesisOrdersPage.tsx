@@ -3,7 +3,7 @@ import { ProsthesisOrder } from '../types/prosthesisOrder';
 import { PersonalFile } from '../types/personalFile';
 import ProsthesisOrderForm from './ProsthesisOrderForm';
 import { diagnoses, availableComponents } from '../data';
-import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, CheckCircle, Clock, Package, Printer } from 'lucide-react';
+import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, Clock, Package, Printer } from 'lucide-react';
 
 interface ProsthesisOrdersPageProps {
   orders: ProsthesisOrder[];

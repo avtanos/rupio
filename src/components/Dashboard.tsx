@@ -42,7 +42,7 @@ import { FootwearOrder } from '../types/footwearOrder';
 import { OttobockOrder } from '../types/ottobockOrder';
 import { RepairOrder } from '../types/repairOrder';
 import { ReadyPoiOrder } from '../types/readyPoiOrder';
-import { WorkflowStatus, WorkflowAction, Notification, WorkflowHistory, DepartmentAssignment } from '../types/workflow';
+import { WorkflowStatus, WorkflowAction, Notification } from '../types/workflow';
 import { 
   Home, 
   Users, 
@@ -82,10 +82,7 @@ const Dashboard: React.FC = () => {
   
   // Workflow и уведомления
   const [, setNotifications] = useState<Notification[]>([]);
-  const [, setWorkflowHistories] = useState<WorkflowHistory[]>([]);
-  const [, setDepartmentAssignments] = useState<DepartmentAssignment[]>([]);
-  const [, setShowLimbVisualization] = useState(false);
-  const [, setSelectedOrderForVisualization] = useState<string | null>(null);
+  // Удалены неиспользуемые переменные для устранения ESLint ошибок
 
   useEffect(() => {
     // Данные загружены успешно

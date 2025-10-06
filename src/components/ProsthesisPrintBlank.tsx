@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Printer, X, Plus, Trash2 } from 'lucide-react';
 import { ProsthesisPrintBlank, ProsthesisPrintComponent } from '../types/printBlank';
 import { prosthesisSemiFinished, prosthesisCodes } from '../data/printReferences';

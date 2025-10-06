@@ -7,9 +7,9 @@ import PersonalDataEdit from './PersonalDataEdit';
 // Удалены неиспользуемые импорты ServiceDirectionsEdit и ProstheticsDataEdit
 import OrdersTable from './OrdersTable';
 import OrderForm from './OrderForm';
-import ProsthesisOrdersView from './ProsthesisOrdersView';
+// import ProsthesisOrdersView from './ProsthesisOrdersView';
 import { diagnoses, availableComponents } from '../data';
-import { adaptWorkOrderToProsthesisOrder } from '../utils/orderAdapters';
+// import { adaptWorkOrderToProsthesisOrder } from '../utils/orderAdapters';
 import { X, User, Calendar, Phone, MapPin, FileText, Clock, CheckCircle, XCircle, Edit, Package, Heart, Stethoscope, History } from 'lucide-react';
 
 interface PersonalFileDetailsProps {
@@ -114,20 +114,21 @@ const PersonalFileDetails: React.FC<PersonalFileDetailsProps> = ({
     setEditingBlock(null);
   };
 
-  const handleNewWorkOrder = () => {
-    setEditingOrder(null);
-    setShowOrderForm(true);
-  };
+  // Удалены неиспользуемые функции для устранения ESLint ошибок
+  // const handleNewWorkOrder = () => {
+  //   setEditingOrder(null);
+  //   setShowOrderForm(true);
+  // };
 
-  const handleViewWorkOrder = (order: WorkOrder) => {
-    setEditingOrder(order);
-    setShowOrderForm(true);
-  };
+  // const handleViewWorkOrder = (order: WorkOrder) => {
+  //   setEditingOrder(order);
+  //   setShowOrderForm(true);
+  // };
 
-  const handleEditWorkOrder = (order: WorkOrder) => {
-    setEditingOrder(order);
-    setShowOrderForm(true);
-  };
+  // const handleEditWorkOrder = (order: WorkOrder) => {
+  //   setEditingOrder(order);
+  //   setShowOrderForm(true);
+  // };
 
   const handleSaveWorkOrder = (workOrder: WorkOrder) => {
     if (editingOrder) {
@@ -144,10 +145,11 @@ const PersonalFileDetails: React.FC<PersonalFileDetailsProps> = ({
     setEditingOrder(null);
   };
 
-  const handleViewProsthesisOrder = (order: any) => {
-    // Здесь можно открыть модальное окно с детальной информацией о заказе
-    // или перейти на страницу заказов протеза
-  };
+  // Удалена неиспользуемая функция handleViewProsthesisOrder для устранения ESLint ошибки
+  // const handleViewProsthesisOrder = (order: any) => {
+  //   // Здесь можно открыть модальное окно с детальной информацией о заказе
+  //   // или перейти на страницу заказов протеза
+  // };
 
   const getServiceStatusIcon = (status: string) => {
     switch (status) {

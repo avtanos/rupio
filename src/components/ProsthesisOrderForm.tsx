@@ -15,7 +15,7 @@ import {
 import { PersonalFile } from '../types/personalFile';
 import ProsthesisComponentsTable from './ProsthesisComponentsTable';
 import FittingsManager from './FittingsManager';
-import { X, Save, Package, AlertCircle, Printer } from 'lucide-react';
+import { X, Save, Printer } from 'lucide-react';
 
 interface ProsthesisOrderFormProps {
   order?: ProsthesisOrder;

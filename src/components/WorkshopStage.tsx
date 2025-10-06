@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Order } from '../types';
-import { Wrench, CheckCircle, FileText, Truck, Package, Eye, Edit, Calendar, User, Factory } from 'lucide-react';
+import { Wrench, CheckCircle, FileText, Truck, Package, Eye, Calendar, User, Factory } from 'lucide-react';
 
 interface WorkshopStageProps {
   orders: Order[];

@@ -3,7 +3,7 @@ import { ReadyPoiOrder } from '../types/readyPoiOrder';
 import { PersonalFile } from '../types/personalFile';
 import ReadyPoiOrderForm from './ReadyPoiOrderForm';
 import { readyPoiProductTypes, readyPoiDiagnoses, materialUnits, defaultMaterials } from '../data/readyPoiReferences';
-import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, CheckCircle, Clock, Package, Accessibility, Printer } from 'lucide-react';
+import { Plus, Search, Filter, Edit, Eye, Trash2, AlertCircle, Clock, Accessibility, Printer } from 'lucide-react';
 
 interface ReadyPoiOrdersPageProps {
   orders: ReadyPoiOrder[];

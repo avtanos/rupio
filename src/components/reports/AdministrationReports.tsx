@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReportData } from '../../types';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 interface AdministrationReportsProps {
   reportData: ReportData['administration'] | null;
