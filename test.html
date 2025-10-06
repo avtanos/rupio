@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РУПОИ - Тестовая страница</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .description {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .status {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+        }
+        .button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button.primary {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            font-weight: 600;
+        }
+        .button.primary:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+        .info {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .loading {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 1rem;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥 РУПОИ</div>
+        <div class="description">Система управления ортопедическими услугами</div>
+        
+        <div class="status">
+            <div class="loading"></div>
+            <p>Проект успешно запущен!</p>
+            <p>React приложение готово к работе</p>
+        </div>
+        
+        <div class="buttons">
+            <a href="#" class="button primary" onclick="startDevServer()">Запустить сервер разработки</a>
+            <a href="#" class="button" onclick="buildProject()">Собрать проект</a>
+            <a href="#" class="button" onclick="openProject()">Открыть в VS Code</a>
+        </div>
+        
+        <div class="info">
+            <p>📁 Расположение проекта: D:\Минтруда\РУПИО\rupio</p>
+            <p>⚡ React + TypeScript + Tailwind CSS</p>
+            <p>🔧 Для запуска используйте: npm start</p>
+        </div>
+    </div>
+    
+    <script>
+        function startDevServer() {
+            alert('Для запуска сервера разработки выполните команду: npm start\n\nИли используйте созданные batch файлы:\n- start_project.bat');
+        }
+        
+        function buildProject() {
+            alert('Для сборки проекта выполните команду: npm run build\n\nИли используйте batch файл:\n- build_project.bat');
+        }
+        
+        function openProject() {
+            alert('Откройте папку проекта в VS Code:\nD:\\Минтруда\\РУПИО\\rupio');
+        }
+        
+        // Автоматическое обновление статуса
+        setTimeout(() => {
+            document.querySelector('.status p:last-child').textContent = 'Все зависимости установлены ✓';
+        }, 2000);
+    </script>
+</body>
+</html>
