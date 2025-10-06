@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rupio/static/css/main.7e5b21ff.css",
+    "main.js": "/rupio/static/js/main.257f61fa.js",
+    "index.html": "/rupio/index.html",
+    "main.7e5b21ff.css.map": "/rupio/static/css/main.7e5b21ff.css.map",
+    "main.257f61fa.js.map": "/rupio/static/js/main.257f61fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e5b21ff.css",
+    "static/js/main.257f61fa.js"
+  ]
+}
