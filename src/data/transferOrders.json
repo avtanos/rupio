@@ -1,0 +1,28 @@
+[
+  {
+    "id": "trf-001",
+    "manufacturingOrderId": "mfg-002",
+    "transferNumber": "TRF-2024-001",
+    "transferDate": "2024-02-18",
+    "warehouseLocation": "Склад-А, Стеллаж-15, Полка-3",
+    "transferredBy": "Петров П.П.",
+    "receivedBy": "Смирнов С.С.",
+    "status": "Принят",
+    "notes": "Обувь готова к выдаче пациенту",
+    "createdAt": "2024-02-18T16:00:00Z",
+    "updatedAt": "2024-02-18T17:30:00Z"
+  },
+  {
+    "id": "trf-002",
+    "manufacturingOrderId": "mfg-004",
+    "transferNumber": "TRF-2024-002",
+    "transferDate": "2024-02-20",
+    "warehouseLocation": "Склад-Б, Стеллаж-8, Полка-1",
+    "transferredBy": "Козлов К.К.",
+    "receivedBy": null,
+    "status": "Передан",
+    "notes": "Ожидает приемки",
+    "createdAt": "2024-02-20T14:00:00Z",
+    "updatedAt": "2024-02-20T14:00:00Z"
+  }
+]
